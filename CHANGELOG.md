@@ -2,6 +2,7 @@
 
 ## Overview
 This page tracks the changes made to the WRNL Volunteer Attendance Portal WebApp. It provides a log of updates, bug fixes, and new features.
+
 Current Version: **v2.1** (deployed on Vercel)
 
 ## Change Log
