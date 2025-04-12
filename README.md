@@ -34,4 +34,4 @@ The WRNL Volunteer Attendance Portal WebApp provides a centralised platform for 
     1. Stores the complete source code for the web application, including HTML files (frontend) and Python scripts (backend). 
 
 ## Portal Link
-- [Access the Portal](https://wearenotlemons.github.io)
+[Access the Portal](https://wearenotlemons.github.io)
