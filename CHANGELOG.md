@@ -43,8 +43,8 @@ Current Version: **v2.1** (deployed on Vercel)
  
 ## Links:
 ### Github Repository:
-- v2.2: https://github.com/wearenotlemons/wrnl-vercel
-- v2: https://github.com/wearenotlemons/wearenotlemons
+- v2.2: [https://github.com/wearenotlemons/wrnl-vercel](https://github.com/wearenotlemons/wrnl-vercel)
+- v2: [https://github.com/wearenotlemons/wrnl-render](https://github.com/wearenotlemons/wrnl-render)
 ### Google Apps Script Library:
 - v2 (Backend API): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/5
 - v1.1 (Backend & Frontend): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/11 
