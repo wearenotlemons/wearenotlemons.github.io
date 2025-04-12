@@ -25,7 +25,7 @@ The WRNL Volunteer Attendance Portal WebApp provides a centralised platform for 
   - The backend processes frontend requests, retrieves necessary data from Google Sheets via Google Apps Script, and serves it to the frontend.
 - **Google Apps Script API:** Facilitates data access and retrieval, enabling the backend to query the sheet for real-time information.
 - **Google Sheets Integration:** Acts as the real-time data store for volunteer attendance records.
-  - All volunteer-related data, including volunteer data and session information, is stored in Google Sheets. The Google Sheets integration provides the WRNL organising committee with a no-code solution for updating volunteer attendance entries. T
+  - All volunteer-related data, including volunteer information and session details, is stored in Google Sheets. The Google Sheets integration provides the WRNL organising committee with a no-code solution for updating volunteer attendance entries.
 - **GitHub Integration:** Serves as the code repository for both frontend and backend components, facilitating version control, collaboration, and deployment.
   - In this repository:
     1. Stores static assets (eg. favicon, header image)
