@@ -3,11 +3,9 @@
 ## wearenotlemons.github.io
 This repository contains static assets (eg. images) used by the various frontend deployments and provides a simple URL redirect to the NYJC We Are Not Lemons (WRNL) Volunteer Attendance Portal.
 
-[wearenotlemons.github.io](https://wearenotlemons.github.io) redirects to WRNL Attendance Portal v2.1 (Hosted on Vercell)
-
-[wearenotlemons.github.io/v2](https://wearenotlemons.github.io/v2) redirects to WRNL Attendance Portal v2 (Hosted on Render)
-
-[wearenotlemons.github.io/attendance](https://wearenotlemons.github.io/attendance) redirects to WRNL Attendance Portal v1.1 (Hosted on Google Apps Script)
+- [wearenotlemons.github.io](https://wearenotlemons.github.io) redirects to WRNL Attendance Portal v2.1 (Hosted on Vercell)
+- [wearenotlemons.github.io/v2](https://wearenotlemons.github.io/v2) redirects to WRNL Attendance Portal v2 (Hosted on Render)
+- [wearenotlemons.github.io/attendance](https://wearenotlemons.github.io/attendance) redirects to WRNL Attendance Portal v1.1 (Hosted on Google Apps Script)
 
 ## Overview
 The WRNL Volunteer Attendance Portal WebApp provides a centralised platform for displaying volunteer attendance data and tracking total volunteer hours. It is designed to provide a convenient view of session participation and volunteer contributions.
