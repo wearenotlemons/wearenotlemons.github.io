@@ -40,6 +40,10 @@ Current Version: **v2.1** (deployed on Vercel)
   1. Migrated attendance data for Sessions 11 and 12 into the current database.
   2. Developed the frontend using Google Apps Script with JavaScript and HTML.
  
-## Repository links:
+## Links:
+### Github Repository:
 - v2.2: https://github.com/wearenotlemons/wrnl-vercel
 - v2: https://github.com/wearenotlemons/wearenotlemons
+### Google Apps Script Library:
+- v2 (Backend API): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/5
+- v1.1 (Backend & Frontend): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/11 
