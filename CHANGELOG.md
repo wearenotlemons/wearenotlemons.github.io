@@ -7,7 +7,7 @@ Current Version: **v2.1** (deployed on Vercel)
 
 ## Change Log
 ### 13 April 2025
-- **Update:** Refactored the backend `VIA` tab to streamline improve ease of use.
+- **Update:** Refactored the backend `VIA` tab to improve ease of use.
 - **Feature:** Implemented display of remarks to clarify cases involving non-standard awarding of VIA hours.
 
 ### 12 April 2025
