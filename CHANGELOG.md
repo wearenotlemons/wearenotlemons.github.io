@@ -20,7 +20,7 @@ Current Version: **v2.1** (deployed on Vercel)
   3. Refactored HTML file to shift backend JavaScript functions into Python functions, separated into a distinct file.
   4. Implemented Python Flask to power the web application.
   5. Deployed the web application on Render.
-  6. Deploymed the web application on Vercel (v2.1)
+  6. Deployed the web application on Vercel (v2.1)
 - **Miscellaneous:** Added a favicon to improve site branding.
 
 ### 11 April 2025
