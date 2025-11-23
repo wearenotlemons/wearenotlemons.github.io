@@ -6,6 +6,9 @@ This page tracks the changes made to the WRNL Volunteer Attendance Portal WebApp
 Current Version: **v2.1** (deployed on Vercel)
 
 ## Change Log
+### 30 April 2025
+- **Archive:** Created a redirect link to v2.1 Vercel page (using an archived Google Sheets backend - frozen in time in Apr 2025)
+
 ### 16 April 2025
 - **Update:** Externalised VIA calculation explanation into a `comments.txt` file to decouple static content from web application logic, enabling easy changes without modifying the source code.
 
