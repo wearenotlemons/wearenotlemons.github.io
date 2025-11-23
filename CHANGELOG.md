@@ -60,3 +60,7 @@ Current Version: **v2.1** (deployed on Vercel)
 ### Google Apps Script Library:
 - v2 (Backend API): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/5
 - v1.1 (Backend & Frontend): https://script.google.com/macros/library/d/1-RRRYi2PICi2E-e5B2kR8z5pZRJ3VXO4or7zBNdD1MWlPYnIqb8eRP95/11 
+
+## Developer & Contact Information
+- Developed by Kenneth (2024-25 Admin Head) [@its-kenneth](https://github.com/its-kenneth)
+- For enquiries, contact NYJC We Are Not Lemons EXCO via Instagram DM [@arewelemons](https://www.instagram.com/arewelemons/)
