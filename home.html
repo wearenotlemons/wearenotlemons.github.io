@@ -13,25 +13,19 @@
             background: #fafafa;
         }
 
-        /* Shared width container */
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        /* Curved header image */
         header img {
             width: 100%;
+            max-width: 1000px;
             height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 14px;   /* ← curved edges  */
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        h1, h2, h3 {
-            font-weight: normal;
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
         h1 {
@@ -63,9 +57,13 @@
             max-width: 350px;
             background: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
 
         .section h3 {
@@ -74,12 +72,12 @@
             color: #333;
         }
 
-        /* Maintain image aspect ratio */
+        /* Image container */
         .img-container {
             width: 100%;
             aspect-ratio: 4 / 3;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-bottom: 10px;
         }
 
@@ -91,7 +89,14 @@
             display: block;
         }
 
-        /* Instagram heading */
+        /* Hover effect for clickable images */
+        .img-container:hover {
+            cursor: pointer;
+            opacity: 0.9;
+            transition: 0.2s ease;
+        }
+
+        /* Instagram Heading */
         .ig-feed h2 {
             text-align: center;
             margin-top: 60px;
@@ -104,17 +109,19 @@
             text-decoration: none;
         }
 
-        /* Footer (with same container width control) */
+        /* Footer */
         footer {
-            max-width: 1000px;        
-            margin: 40px auto 0 auto; 
-            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 14px;
+            padding: 20px;
+            margin-top: 40px;
             border-top: 1px solid #ddd;
             color: #555;
-            font-size: 14px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         footer a {
@@ -126,20 +133,12 @@
             text-decoration: underline;
         }
 
-        /* Responsive layout */
+        /* Responsive: stack cards vertically */
         @media (max-width: 725px) {
             .sections {
                 flex-direction: column;
                 gap: 30px;
                 align-items: center;
-            }
-        }
-
-        @media (max-width: 900px) {
-            footer {
-                flex-direction: column;
-                gap: 8px;
-                text-align: center;
             }
         }
     </style>
@@ -149,33 +148,40 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
-        </div>
+        <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
     </header>
 
     <div class="container">
 
         <!-- Two Main Sections -->
         <div class="sections">
+
+            <!-- Left Card -->
             <div class="section">
                 <h3>WRNL Cleanups</h3>
+
                 <div class="img-container">
-                    <img src="assets/Session15_TampinesEast.jpeg" alt="WRNL Cleanup">
+                    <img src="assets/Session15_TampinesEast.jpeg" alt="Left Section Image">
                 </div>
+
                 <p>
                     Started in 2022, WRNL organises community sessions that provide opportunities for volunteerism.
                 </p>
             </div>
 
+            <!-- Right Card -->
             <div class="section">
                 <h3>WRNL Volunteer Portal</h3>
-                <div class="img-container">
-                    <img src="assets/Volunteer Portal.jpg" alt="Volunteer Portal">
-                </div>
+
+                <a href="/attendance">
+                    <div class="img-container">
+                        <img src="assets/Volunteer Portal.jpg" alt="Right Section Image">
+                    </div>
+                </a>
+
                 <p>
                     Track your WRNL volunteer records 
-                    <a href="https://wearenotlemons.github.io/attendance">here</a>.
+                    <a href="/attendance">here</a>.
                 </p>
             </div>
         </div>
