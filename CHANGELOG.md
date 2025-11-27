@@ -1,15 +1,26 @@
 # WRNL Volunteer Attendance Portal WebApp - Change Log
 
 ## Overview
-This page tracks the changes made to the WRNL Volunteer Attendance Portal WebApp. It provides a log of updates, bug fixes, and new features.
+This page tracks the changes made to the WRNL Website and Volunteer Attendance Portal WebApp. It provides a log of updates, bug fixes, and new features.
 
 Current Version: **v2.1** (deployed on Vercel)
 
 ## Change Log
+### 27 November 2025
+- **Homepage:** Added homepage (`/home`)
+- Redirect links updated: 
+  - `/` redirects to homepage
+  - `/attendance` redirects to Volunteer Attendance Portal (current version v2.1, hosted on Vercel)
+  
+  Redirect links to archived versions of the Portal
+    - `/attendance-v1` redirects to v1 Portal (Google Apps Script)
+    - `/v2` redirects to v2 Portal (Hosted on Render)
+    - `/archived` redirects to archived version (v2.1, Apr 2025)
+
 ### 30 April 2025
 - **Archive:** Created a redirect link to v2.1 Vercel page (using an archived Google Sheets backend - frozen in time in Apr 2025)
-- Archived version viewable here: [wearenotlemons.github.io/archived](wearenotlemons.github.io/archived)
-- Archived version hosted here: [https://github.com/its-kenneth/wearenotlemons](https://github.com/its-kenneth/wearenotlemons)
+- Archived version (Apr 2025) viewable here: [wearenotlemons.github.io/archived](wearenotlemons.github.io/archived)
+- Archived version (Apr 2025) hosted here: [https://github.com/its-kenneth/wearenotlemons](https://github.com/its-kenneth/wearenotlemons)
 
 ### 16 April 2025
 - **Update:** Externalised VIA calculation explanation into a `comments.txt` file to decouple static content from web application logic, enabling easy changes without modifying the source code.
