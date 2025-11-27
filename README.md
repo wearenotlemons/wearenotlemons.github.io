@@ -1,17 +1,19 @@
-# WRNL Volunteer Attendance Portal WebApp 
+# WRNL WebApp 
+This repository contains static assets (eg. images) used by the various frontend deployments, hosts homepage and provides a simple URL redirect to the NYJC We Are Not Lemons (WRNL) Volunteer Attendance Portal.
 
-## wearenotlemons.github.io
-This repository contains static assets (eg. images) used by the various frontend deployments and provides a simple URL redirect to the NYJC We Are Not Lemons (WRNL) Volunteer Attendance Portal.
+## WRNL Homepage
+- [wearenotlemons.github.io](https://wearenotlemons.github.io) redirects to WRNL Homepage [wearenotlemons.github.io/home](https://wearenotlemons.github.io/home)
 
+## WRNL Volunteer Attendance Portal WebApp 
 **Active version:**
-- [wearenotlemons.github.io](https://wearenotlemons.github.io) redirects to WRNL Attendance Portal v2.1 (Hosted on Vercel)
+- [wearenotlemons.github.io/attendance](https://wearenotlemons.github.io/attendance) redirects to WRNL Attendance Portal v2.1 (Hosted on Vercel)
 
 **Archived versions (frozen in time):**
 - [wearenotlemons.github.io/archived](https://wearenotlemons.github.io/archived) redirects to WRNL Attendance Portal v2.1 (Apr 2025)
 
 **Past versions (live):**
 - [wearenotlemons.github.io/v2](https://wearenotlemons.github.io/v2) redirects to WRNL Attendance Portal v2 (Hosted on Render)
-- [wearenotlemons.github.io/attendance](https://wearenotlemons.github.io/attendance) redirects to WRNL Attendance Portal v1.1 (Hosted on Google Apps Script)
+- [wearenotlemons.github.io/attendance-v1](https://wearenotlemons.github.io/attendance-v1) redirects to WRNL Attendance Portal v1.1 (Hosted on Google Apps Script)
 
 ## Overview
 The WRNL Volunteer Attendance Portal WebApp provides a centralised platform for displaying volunteer attendance data and tracking total volunteer hours. It is designed to provide a convenient view of session participation and volunteer contributions.
@@ -39,5 +41,6 @@ The WRNL Volunteer Attendance Portal WebApp provides a centralised platform for 
   - Within respective repositories:
     1. Stores the complete source code for the web application, including HTML files (frontend) and Python scripts (backend). 
 
-## Portal Link
-[Access the Portal](https://wearenotlemons.github.io)
+## Links
+[Access the WRNL Website](https://wearenotlemons.github.io)
+[Access the WRNL Volunteer Portal](https://wearenotlemons.github.io/attendance)
