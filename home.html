@@ -43,13 +43,13 @@
             margin-right: auto;
         }
 
-        /* Two section layout */
         .sections {
             display: flex;
             justify-content: center;
             gap: 60px;
             flex-wrap: wrap;
             margin-bottom: 50px;
+            align-items: flex-start;
         }
 
         .section {
@@ -60,10 +60,8 @@
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-align: center;
-
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
         }
 
         .section h3 {
@@ -72,7 +70,6 @@
             color: #333;
         }
 
-        /* Image container */
         .img-container {
             width: 100%;
             aspect-ratio: 4 / 3;
@@ -89,14 +86,12 @@
             display: block;
         }
 
-        /* Hover effect for clickable images */
         .img-container:hover {
             cursor: pointer;
             opacity: 0.9;
             transition: 0.2s ease;
         }
 
-        /* Instagram Heading */
         .ig-feed h2 {
             text-align: center;
             margin-top: 60px;
@@ -109,7 +104,6 @@
             text-decoration: none;
         }
 
-        /* Footer */
         footer {
             display: flex;
             justify-content: space-between;
@@ -133,7 +127,6 @@
             text-decoration: underline;
         }
 
-        /* Responsive: stack cards vertically */
         @media (max-width: 725px) {
             .sections {
                 flex-direction: column;
@@ -146,17 +139,14 @@
 
 <body>
 
-    <!-- Header -->
     <header>
         <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
     </header>
 
     <div class="container">
 
-        <!-- Two Main Sections -->
         <div class="sections">
 
-            <!-- Left Card -->
             <div class="section">
                 <h3>WRNL Cleanups</h3>
 
@@ -169,7 +159,6 @@
                 </p>
             </div>
 
-            <!-- Right Card -->
             <div class="section">
                 <h3>WRNL Volunteer Portal</h3>
 
@@ -186,10 +175,9 @@
             </div>
         </div>
 
-        <!-- Instagram Section -->
         <div class="ig-feed">
             <h2>
-                Latest from IG 
+                Latest from 
                 <a href="https://www.instagram.com/arewelemons" target="_blank">@arewelemons</a>
             </h2>
 
@@ -207,7 +195,6 @@
 
     </div>
 
-    <!-- Footer -->
     <footer>
         <span>© NYJC We Are Not Lemons 2025</span>
         <a href="https://www.instagram.com/arewelemons" target="_blank">IG: @arewelemons</a>
