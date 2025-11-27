@@ -14,8 +14,11 @@
 
         header img {
             width: 100%;
+            max-width: 1000px;
             height: auto;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .container {
@@ -31,62 +34,97 @@
 
         .description {
             text-align: center;
+            max-width: 800px;
             font-size: 1.1rem;
             margin-bottom: 40px;
             color: #444;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        /* Two section layout */
         .sections {
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            gap: 60px;
             flex-wrap: wrap;
+            margin-bottom: 50px;
         }
 
         .section {
             flex: 1;
-            min-width: 280px;
+            max-width: 350px;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        .section img {
+        .section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Image container to maintain aspect ratio */
+        .img-container {
             width: 100%;
+            aspect-ratio: 4 / 3; /* adjust to match left image ratio */
+            overflow: hidden;
             border-radius: 8px;
             margin-bottom: 10px;
         }
 
-        /* Instagram section */
-        #ig-posts {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .ig-square {
-            width: 300px;
-            height: 300px; /* perfect square */
-            display: block;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            text-decoration: none;
-        }
-
-        .ig-square img {
+        .img-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* keeps it square-cropped */
+            object-fit: cover; /* crop excess */
+            object-position: top; /* keep top, crop bottom */
             display: block;
         }
 
+        /* Instagram Heading */
         .ig-feed h2 {
             text-align: center;
             margin-top: 60px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .ig-feed h2 a {
+            color: #0077ff;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            color: #555;
+        }
+
+        footer a {
+            color: #0077ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive: stack sections vertically on small screens */
+        @media (max-width: 725px) {
+            .sections {
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -98,63 +136,58 @@
         <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
     </header>
 
-    <!-- Main Container -->
     <div class="container">
-
-        <h1>We Are Not Lemons</h1>
-        <p class="description">
-            Short description text goes here. You can describe your group, purpose, or mission.
-        </p>
-
-        <!-- Two Sections -->
+        <!-- Two Main Sections -->
         <div class="sections">
             <div class="section">
-                <img src="assets/Lemons Logo.jpg" alt="Left Section Image">
+                <h3>WRNL Cleanups</h3>
+                <div class="img-container">
+                    <img src="assets/Session15_TampinesEast.jpeg" alt="Left Section Image">
+                </div>
                 <p>
-                    Text for the left section goes here. Describe a feature, event, or message.
+                    Started in 2022, WRNL organises community sessions that provide opportunities for volunteerism.
                 </p>
             </div>
 
             <div class="section">
-                <img src="assets/Lemons Logo.jpg" alt="Right Section Image">
+                <h3>WRNL Volunteer Portal</h3>
+                <div class="img-container">
+                    <img src="assets/WRNL Volunteer Portal.jpg" alt="Right Section Image">
+                </div>
                 <p>
-                    Text for the right section goes here. Add more info or highlight something important.
+                    Track your WRNL volunteer records 
+                    <a href="wearenotlemons.github.io/attendance">here</a>.
                 </p>
             </div>
         </div>
 
-        <!-- Instagram Feed -->
+        <!-- Instagram Section (Behold Widget) -->
         <div class="ig-feed">
-            <h2>Latest from Instagram</h2>
-            <div id="ig-posts"></div>
+            <h2>
+                Latest from IG 
+                <a href="https://www.instagram.com/arewelemons" target="_blank">@arewelemons</a>
+            </h2>
+
+            <!-- Embedded Behold Feed -->
+            <behold-widget feed-id="NZ94RMKMoEZAtZTHnDKU"></behold-widget>
+            <script>
+                (() => {
+                    const d = document,
+                          s = d.createElement("script");
+                    s.type = "module";
+                    s.src = "https://w.behold.so/widget.js";
+                    d.head.append(s);
+                })();
+            </script>
         </div>
 
     </div>
 
-    <script>
-        // Fetch Instagram JSON feed
-        fetch("https://feeds.behold.so/TXEsHCPHIobkM3vHnk41")
-            .then(res => res.json())
-            .then(data => {
-                const posts = data.items.slice(0, 3); // only latest 3
-                const container = document.getElementById("ig-posts");
-
-                posts.forEach(post => {
-                    const link = document.createElement("a");
-                    link.href = post.url;       // IG post link
-                    link.target = "_blank";
-                    link.className = "ig-square";
-
-                    const img = document.createElement("img");
-                    img.src = post.media;
-                    img.alt = "Instagram Post";
-
-                    link.appendChild(img);
-                    container.appendChild(link);
-                });
-            })
-            .catch(err => console.error("IG feed error:", err));
-    </script>
+    <!-- Footer -->
+    <footer>
+        <span>© NYJC We Are Not Lemons 2025</span>
+        <a href="https://www.instagram.com/arewelemons" target="_blank">IG: @arewelemons</a>
+    </footer>
 
 </body>
 </html>
