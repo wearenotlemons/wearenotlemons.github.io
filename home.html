@@ -13,19 +13,25 @@
             background: #fafafa;
         }
 
-        header img {
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
+        /* Shared width container */
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
+        }
+
+        /* Curved header image */
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 14px;   /* ← curved edges  */
+            display: block;
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
         }
 
         h1 {
@@ -57,7 +63,7 @@
             max-width: 350px;
             background: white;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-align: center;
         }
@@ -68,24 +74,24 @@
             color: #333;
         }
 
-        /* Image container to maintain aspect ratio */
+        /* Maintain image aspect ratio */
         .img-container {
             width: 100%;
-            aspect-ratio: 4 / 3; /* adjust to match left image ratio */
+            aspect-ratio: 4 / 3;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-bottom: 10px;
         }
 
         .img-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* crop excess */
-            object-position: top; /* keep top, crop bottom */
+            object-fit: cover;
+            object-position: top;
             display: block;
         }
 
-        /* Instagram Heading */
+        /* Instagram heading */
         .ig-feed h2 {
             text-align: center;
             margin-top: 60px;
@@ -98,16 +104,17 @@
             text-decoration: none;
         }
 
-        /* Footer */
+        /* Footer (with same container width control) */
         footer {
+            max-width: 1000px;        
+            margin: 40px auto 0 auto; 
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
-            padding: 20px;
-            margin-top: 40px;
             border-top: 1px solid #ddd;
             color: #555;
+            font-size: 14px;
         }
 
         footer a {
@@ -119,12 +126,20 @@
             text-decoration: underline;
         }
 
-        /* Responsive: stack sections vertically on small screens */
+        /* Responsive layout */
         @media (max-width: 725px) {
             .sections {
                 flex-direction: column;
                 gap: 30px;
                 align-items: center;
+            }
+        }
+
+        @media (max-width: 900px) {
+            footer {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
             }
         }
     </style>
@@ -134,16 +149,19 @@
 
     <!-- Header -->
     <header>
-        <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
+        <div class="container">
+            <img src="assets/WRNL Header.jpg" alt="We Are Not Lemons Header">
+        </div>
     </header>
 
     <div class="container">
+
         <!-- Two Main Sections -->
         <div class="sections">
             <div class="section">
                 <h3>WRNL Cleanups</h3>
                 <div class="img-container">
-                    <img src="assets/Session15_TampinesEast.jpeg" alt="Left Section Image">
+                    <img src="assets/Session15_TampinesEast.jpeg" alt="WRNL Cleanup">
                 </div>
                 <p>
                     Started in 2022, WRNL organises community sessions that provide opportunities for volunteerism.
@@ -153,7 +171,7 @@
             <div class="section">
                 <h3>WRNL Volunteer Portal</h3>
                 <div class="img-container">
-                    <img src="assets/Volunteer Portal.jpg" alt="Right Section Image">
+                    <img src="assets/Volunteer Portal.jpg" alt="Volunteer Portal">
                 </div>
                 <p>
                     Track your WRNL volunteer records 
@@ -162,14 +180,13 @@
             </div>
         </div>
 
-        <!-- Instagram Section (Behold Widget) -->
+        <!-- Instagram Section -->
         <div class="ig-feed">
             <h2>
                 Latest from IG 
                 <a href="https://www.instagram.com/arewelemons" target="_blank">@arewelemons</a>
             </h2>
 
-            <!-- Embedded Behold Feed -->
             <behold-widget feed-id="NZ94RMKMoEZAtZTHnDKU"></behold-widget>
             <script>
                 (() => {
